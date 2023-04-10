@@ -7,6 +7,6 @@ import { ModalService } from 'src/app/service/modal.service';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent {
-  constructor(private modal: ModalService) {
+  constructor(public modal: ModalService) {
   }
 }
