@@ -3,7 +3,8 @@
   duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400"
   [type]="type"
   [placeholder]="placeholder"
-  [formControl]="control"/>
+  [formControl]="control"
+  [mask]="format"/>
 
 <ng-container *ngIf="control.touched && control.dirty">
   <p *ngIf="control.errors?.['required']"
