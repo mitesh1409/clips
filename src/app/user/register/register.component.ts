@@ -28,6 +28,10 @@ export class RegisterComponent {
     confirm_password: new FormControl('', [
       Validators.required,
     ]),
-    phone_number: new FormControl(''),
+    phone_number: new FormControl('', [
+      Validators.required,
+      Validators.minLength(13),
+      Validators.maxLength(13)
+    ]),
   });
 }
